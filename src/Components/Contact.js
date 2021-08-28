@@ -11,7 +11,7 @@ const Contact = ({ data }) => {
 
     const handleClick = (e) => {
        e.preventDefault();
-      window.open(`mailto:${email}?subject=${subject}&body=${name}: ${message}`);
+      window.open(`mailto:ibarrao.jm@gmail.com?subject=${subject}&body=Nombre:${name}, email:${email}. ${message}`);
     }
     
 
@@ -79,11 +79,11 @@ const Contact = ({ data }) => {
             <aside className="four columns footer-widgets">
                <div className="widget widget_contact">
 
-					   <h4>Address and Phone</h4>
+					   <h4>Contact</h4>
 					   <p className="address">
 						   {data?.name}<br />
-						   {data?.address.street} <br />
-						   {data?.address.city}, {data?.address.state} {data?.address.zip}<br />
+		
+						   {data?.address.city}, {data?.address.state}<br />
 						   <span>{data?.phone}</span>
 					   </p>
 				   </div>
